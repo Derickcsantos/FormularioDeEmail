@@ -197,19 +197,37 @@
 /* Design responsive (contatos)*/
 
 @media (max-width: 991px){
-    body{
-        background:#fff;
+    #contact {
+        padding: 20px; /* Reduz padding do contato */
     }
-    .contact{
-        padding: 20px;
-    }
+
     .box{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr; /* Altera para uma coluna */
+        grid-template-rows: auto; /* Redefine para linhas automáticas */
         grid-template-areas: 
         "form"
         "info"
         "map";
+        grid-gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .inputBox{
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .inputBox input[type="submit"]{
+        max-width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .info .infoBox div span{
+        font-size: 1.2em; /* Reduz o tamanho do ícone */
+        min-width: 30px; /* Reduz o tamanho mínimo */
+        height: 30px; /* Reduz a altura */
+    }
+
+    .sci li a{
+        font-size: 1.5em; /* Reduz o tamanho dos ícones de mídia social */
     }
 }
+
 
